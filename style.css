@@ -7,19 +7,96 @@ body {
     margin: 0;
 }
 
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background: #f0f0f0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 9.375rem; /* Breite des Logos */
+    height: auto; /* Automatische Höhe */
+}
+
 .container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 1.25rem;
 }
 
 .gif {
     width: 100%;
-    max-width: 600px;
+    max-width: 18.75rem;
     height: auto;
 }
 
+.button-placeholder {
+    margin-top: 10.9rem;
+    width: 100%;
+    max-width: 18.75rem;
+    height: 5.625rem;
+    background: #f0f0f0;
+}
+
 button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
+    margin-top: 5rem;
+    padding: 3.5rem 6.25rem;
+    font-size: 3.75rem;
     cursor: pointer;
+    background-color: #6455a0;
+    color: white;
+    border: none;
+    border-radius: 0.625rem;
+    transition: background-color 0.3, transform 0.1s;
+}
+
+button:hover {
+    background-color:#584b8b;
+}
+
+button:active {
+    background-color: #493e78;
+    transform: scale(0.98);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 799.99px) {
+    .header {
+        padding: 0.5rem;
+    }
+
+    .logo {
+        width: 6.25rem;
+    }
+
+    .container {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .gif {
+        max-width: 15rem;
+    }
+
+    .button-placeholder {
+        margin-top: 3.7rem;
+        height: 4.375rem;
+    }
+
+    .button {
+        margin-top: 3.75rem;
+        padding: 1.25rem 3.75rem;
+        font-size: 1.25rem;
+        border-radius: 0.5rem;
+    }
 }
