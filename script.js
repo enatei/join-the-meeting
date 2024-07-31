@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
             'assets/audio/audio2.mp3',
             'assets/audio/audio3.mp3',
             'assets/audio/audio4.mp3',
-            'assets/audio/audio5.mp3'
+            'assets/audio/audio5.mp3',
+            'assets/audio/audio6.mp3'
         ];
 
         const randomIndex = Math.floor(Math.random() * audioFiles.length);
