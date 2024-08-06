@@ -32,7 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
             'assets/audio/audio10.mp3',
             'assets/audio/audio11.mp3',
             'assets/audio/audio12.mp3',
-            'assets/audio/audio13.mp3'
+            'assets/audio/audio13.mp3',
+            'assets/audio/audio14.mp3',
+            'assets/audio/audio15.mp3',
+            'assets/audio/audio16.mp3'
         ];
 
         const randomIndex = Math.floor(Math.random() * audioFiles.length);
